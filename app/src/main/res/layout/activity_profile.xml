@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tallrocket.trial.profile.ProfileActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:id="@+id/bg"
+        android:src="@drawable/bg"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="199dp"
+        android:src="@drawable/profile_2"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/profile_image"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Rohinikbjbjgjgjgjgj" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Talent Acuisition Expert"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/des"
+        android:layout_below="@+id/profile_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_info"
+        android:textSize="14sp"
+        android:padding="5dp"
+        android:id="@+id/description"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/des"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+</RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
